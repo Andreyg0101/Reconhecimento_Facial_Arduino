@@ -1,26 +1,37 @@
-🎓 Projeto de Catraca com Reconhecimento Facial
+# 🎓 Sistema de Catraca com Reconhecimento Facial
 
-Sistema desenvolvido em sala de aula para controle de acesso com reconhecimento facial.
-Utiliza Python (OpenCV), MySQL, PHP e ESP32 para identificar alunos, registrar acessos e liberar a catraca automaticamente.
+Projeto desenvolvido em grupo na faculdade, com o objetivo de criar um **sistema de controle de acesso automatizado** utilizando **reconhecimento facial**.  
+O sistema identifica alunos cadastrados, registra seus acessos em um banco de dados e envia comandos a uma **catraca controlada por um ESP32**, permitindo a liberação ou bloqueio de entrada.
 
-🧩 Arquivos principais
+---
 
-reconhecimento_opencv_alunos.py — reconhecimento facial e integração com ESP32
+## 🧠 Funcionalidades
+- Reconhecimento facial em tempo real com **OpenCV**  
+- Integração com **MySQL** para registro de acessos  
+- Controle físico da catraca via **ESP32 (porta serial)**  
+- Conversão automática de imagens para o formato compatível  
+- Interface web em **PHP** para visualização dos registros  
 
-converter_final.py — conversão de imagens para o formato compatível (RGB 8-bit)
+---
 
-conexao.php — conexão com o banco de dados MySQL
+## 🧩 Estrutura do Projeto
+| Arquivo | Descrição |
+|----------|------------|
+| `reconhecimento_opencv_alunos.py` | Código principal de reconhecimento facial e integração com o ESP32 |
+| `converter_final.py` | Conversor de imagens para o padrão RGB 8-bit |
+| `conexao.php` | Script de conexão com o banco de dados MySQL |
+| `index.php` | Interface web para exibir e gerenciar os acessos |
 
-index.php — interface web para consulta dos registros
+---
 
-🛠️ Tecnologias
+## 🛠️ Tecnologias Utilizadas
+- **Python** (OpenCV, Pyttsx3, Serial)  
+- **PHP**  
+- **MySQL**  
+- **ESP32**  
 
-Python
+---
 
-OpenCV
-
-PHP
-
-MySQL
-
-ESP32
+## 👥 Desenvolvido por
+Projeto desenvolvido em grupo por colegas da faculdade de **Análise e Desenvolvimento de Sistemas - UNIMES**,  
+com colaboração mútua em todas as etapas de desenvolvimento e integração do sistema.
